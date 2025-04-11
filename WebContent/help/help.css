@@ -1,0 +1,177 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FFF6F4;
+}
+
+.logo {
+            display: flex;
+            align-items: center;
+        }
+
+.logo-img {
+            height: auto; 
+            max-height: 60px; 
+            margin-right: 10px; 
+        }
+
+.contact-options {
+    display: flex;
+    justify-content: space-between;
+    padding: 2em;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2em; /* Add margin for spacing */
+}
+
+.animation-container {
+    width: 40%;
+    text-align: center;
+}
+
+.animated-image {
+    width: 600px;
+    max-width: 350px;
+    animation: fadeIn 2s ease-in-out;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.contact-methods {
+    display: flex;
+    flex-direction: row; /* Align elements horizontally */
+    align-items: center;
+    gap: 2em;
+    width: 60%; /* Ensure full width for better alignment */
+}
+
+.contact-method {
+    text-align: center;
+    width: 250px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 1em;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.contact-method img {
+    width: 50px;
+    height: 50px;
+}
+
+.contact-method h2 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.contact-method button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 0.5em 1em;
+    margin-top: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.contact-method button:hover {
+    background-color: #45a049;
+}
+
+.contact-method button:active {
+    background-color: #388e3c;
+}
+
+main {
+    padding: 20px;
+}
+
+main h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.faq-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.faq-item {
+    flex: 1 1 calc(25% - 40px);
+    box-sizing: border-box;
+    padding: 20px;
+    margin: 10px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    cursor: pointer;
+}
+
+.faq-item img {
+    height: 175px; /* Adjust as needed */
+    width: 175px; /* Adjust as needed */
+    margin-bottom: 10px;
+}
+
+.faq-item p {
+    margin: 0;
+    font-size: 16px;
+    color: #333;
+}
+
+footer {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 1em;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    border-radius: 10px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel ="stylesheet" href ="popup_css.css">
+<title> Payment </title>
+</head>
+<body>
+	<div class="container">
+		<button type="submit" class="btn" onClick="openPopup()">Done!</button>
+		<div class="popup" id="popup">
+			<!-- <img src="pop_img.jpg"> -->
+			<h1>Payment Successfull!</h1><br>
+			<button type="button" onClick = "BackTo_FrontPage()"> Back </button> 
+		</div>
+	</div>
+<script>
+	let popup = document.getElementById("popup");
+
+	function openPopup()
+	{
+		popup.classList.add("open-popup");
+	}
+
+	function BackTo_FrontPage()
+	{
+
+		popup.classList.remove("open-popup");
+		window.location.href="index.jsp";
+	}
+
+
+
+</script>
+</body>
+</html>
+		
